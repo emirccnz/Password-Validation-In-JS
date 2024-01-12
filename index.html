@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="upperCard">
+                <h2>Login</h2>
+            </div>
+            <div class="cardBody">
+                <p class="textEmail">Email</p>
+                <input type="email" class="email" placeholder="Enter email" id="emailId">
+                <ul class="errors" id="errors2">
+                    <li class="errorsLi">This place can't be empty!</li>
+                </ul>
+                <p class="textPassword">Password</p>
+                <input type="password" id="passwordId" class="password" placeholder="Enter password">
+                <i class="fa-solid fa-eye-slash" id="closedEye"></i>
+                <i class="fa-solid fa-eye" id="openedEye"></i>
+                <ul id="needs">
+                    <li>At least 1 number(0...9)</li>
+                    <li>At least 8 characters lenght</li>
+                    <li>At least 1 lowercase letter(a...z)</li>
+                    <li>At least 1 uppercase letter(A...Z)</li>
+                    <li>At least 1 special symbol(!...$)</li>
+                </ul>
+                <ul class="okayUl" id="okayUl">
+                    <li class="allright">It's all okay</li>
+                </ul>
+                <ul class="errors" id="errors">
+                    <li class="errorsLi">This place can't be empty!</li>
+                </ul>
+                <ul class="errors" id="invalidUl">
+                    <li class="errorsLi">Invalid password! Please obey the rules!</li>
+                </ul>
+
+            </div>
+            <div class="cardFooter">
+
+                <button id="checkButtonId">Check</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

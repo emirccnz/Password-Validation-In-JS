@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+* {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    background-image: url(pexels-pixabay-531880.jpg);
+}
+
+
+
+.card {
+    border-radius: 5px;
+    border: 4px solid white;
+    position: absolute;
+    margin-top: 10%;
+    height: auto;
+    width: 30%;
+    background-color: black;
+}
+
+
+.upperCard {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.upperCard h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cardBody {
+    margin-left: 8%;
+}
+
+.cardBody p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    font-size: 15px;
+}
+
+.cardBody input {
+    height: 6vh;
+    width: 85%;
+    border-style: none;
+    border-radius: 5px;
+    padding-left: 5%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+.cardBody input:focus {
+    outline: none;
+
+}
+
+.email {
+    margin-bottom: 30px;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin-top: 10%;
+}
+
+.cardFooter button {
+    width: 30%;
+    height: 7vh;
+    cursor: pointer;
+    border-style: none;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: .3s;
+    font-weight: 1000;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+
+.cardFooter button:hover {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+#needs {
+    margin-top: 10px;
+    display: none;
+}
+
+.cardBody ul li,
+.allright,
+.errorsLi {
+    margin-left: -20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+.changedLis,
+.allright,
+.errorsLi {
+
+    list-style: none;
+}
+
+.changedLis::before,
+.allright::before {
+    margin-left: -18px;
+    content: "\2713";
+    margin-right: 0.5em;
+    color: #03FF4B;
+}
+
+
+
+.allright {
+    color: white;
+}
+
+.okayUl,
+.errors {
+    margin-top: 10px;
+    display: none;
+
+}
+
+.errorsLi::before {
+    margin-left: -18px;
+    content: "\2717";
+    margin-right: 0.5em;
+    color: red;
+}
+
+
+#errors2 {
+    transform: translateY(-160%);
+}
+
+i {
+    position: absolute;
+    margin-left: -10%;
+    margin-top: 4%;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 250px) {
+    body {
+        overflow-y: hidden;
+
+
+    }
+}
